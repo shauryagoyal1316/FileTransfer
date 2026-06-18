@@ -35,5 +35,14 @@ This file contains foundational mandates and context for Gemini CLI's interactio
 - `pnpm format`: Format code with Prettier
 - `pnpm type:check`: TypeScript type checking
 
+## Coding Conventions
+
+- **Language:** Always use TypeScript.
+- **Components:** Use function syntax for defining React components. Define prop types inline.
+- **Exports:** Export values on the same line as their definition.
+- **Typing:** Always define the return type of a function or component.
+- **Styling:** Use Tailwind CSS for styling.
+- **Formatting:** Do not use trailing semicolons.
+
 ### Branching & PRs
 - All changes should be committed directly to the main branch (or current active branch) and pushed immediately as per the mandate.
