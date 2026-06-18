@@ -105,7 +105,7 @@ function UploadingState({
         You are uploading {pluralize(uploadedFiles.length, 'file', 'files')}.
       </TitleText>
       <SubtitleText>
-        Leave this tab open. FilePizza does not store files.
+        Leave this tab open. File Transfer does not store files.
       </SubtitleText>
       <UploadFileList files={fileListData} />
       <WebRTCPeerProvider>
