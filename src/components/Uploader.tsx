@@ -53,12 +53,22 @@ export default function Uploader({
   return (
     <>
       <div className="flex w-full items-center">
-        <div className="flex-none mr-4 bg-white p-2">
+        <div className="flex-none mr-4 bg-white p-2 rounded-lg">
           <QRCode value={shortURL ?? ''} size={QR_CODE_SIZE} />
         </div>
         <div className="flex-auto flex flex-col justify-center space-y-2">
           <CopyableInput label="Long URL" value={longURL ?? ''} />
           <CopyableInput label="Short URL" value={shortURL ?? ''} />
+          {password && (
+            <div className="flex flex-col space-y-1">
+              <span className="text-[10px] font-bold uppercase tracking-wider text-stone-500 dark:text-stone-400">
+                Password
+              </span>
+              <div className="px-3 py-2 bg-stone-100 dark:bg-stone-800 rounded-md border border-stone-200 dark:border-stone-700 text-sm font-mono break-all text-stone-900 dark:text-stone-100">
+                {password}
+              </div>
+            </div>
+          )}
         </div>
       </div>
       <div className="mt-6 pt-4 border-t border-stone-200 dark:border-stone-700 w-full">
